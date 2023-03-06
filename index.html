@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      
+
+    
+  <main>
+  <!-- Section 1(2 BLOCKS) -->
+    <section class="Section-1">
+      <div class="container-fluid">
+        <div class="row g-0">
+          <div class="col-xl-9 col-md-12 order-md-1 order-2">
+            <div class="block-1 img-fluid"></div>
+          </div>
+          <div class="col-xl-3 col-md-12 order-md-1 order-2">
+            <div class="block-2 text-center d-flex justify-content-center align-items-center flex-column">
+              <div class="search-container mb-3">
+                <form action="/search">
+                  <input type="text" placeholder="Поиск...">
+                  <button type="submit">Найти</button>
+                </form>
+              </div>
+              <h1>Web Design Studio</h1>
+              <p class="p-3">Welcome to our web studio! We specialize in creating stunning websites that are not only visually appealing but also highly functional and user-friendly. </p>
+              <p>Our team of expert web designers and developers work closely with clients to understand their unique needs and goals, and then create customized solutions that exceed expectations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      
+
+        <!-- Section 2(3 BLOCKS) -->
+        <section class="Section-2">
+          <div class="container-fluid">
+<div class="row g-0">
+    <div class="col-xl-5">
+        <div class="block-3 text-center d-flex justify-content-center align-items-center flex-column">
+          <h1>Drawing <strong>Sketch</strong></h1>
+          <p>Drawing sketches is an essential tool for visual thinkers. It allows for rapid idea generation, conceptualization, and easy communication of complex concepts in a simple form.</p>
+          <h1>Making <strong>Design</strong></h1>
+          <p>Making a design involves several stages, including research, ideation, prototyping, and refinement. Effective design should consider user needs, aesthetics, and functionality to create a visually pleasing and user-friendly product.</p>
+          <h1>Developing <strong>Products</strong></h1>
+          <p>Developing products involves a systematic approach, including market research, prototyping, testing, and launch. Effective product development requires consideration of user needs, technology, cost, and market trends.</p>
+    </div>
+    </div>
+    <div class="col-xl-7">
+        <div class="block-4">
+          <div>
+          <h1 class="pt-5 mx-5 text-center">Best <strong>Starting</strong></h1>
+          <p class="d-flex justify-content-center align-items-center flex-column pt-3 mx-5 text-center">The best starting point depends on the task at hand, but generally, it's recommended to start with a clear goal, a plan, and relevant research. Effective starting points enable focused work and ensure efficient use of resources.</p>
+          <div class="text-center"><button class="button--block-4 mx-5 m-5 my-3" >View Our History</button></div>
+        </div>
+        
+      </div>
+        <div class="block-5">
+          <div>
+            <h1 class="pt-5 mx-5 text-center">Great <strong>Reputation</strong></h1>
+            <p class="d-flex justify-content-center align-items-center flex-column pt-3 mx-5 text-center">A design studio with a great reputation has likely earned it through consistently producing high-quality work, delivering excellent customer service, and building strong relationships with clients.</p>
+            <div class="text-center"><button class="button--block-5 mx-5 m-5 my-3">Go to the page</button></div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+      </section>
+    </main>
+    
+
+<footer>
+      <!-- Section 3(2 BLOCKS) -->
+        <section class="Section-3">
+          <div class="container-fluid">
+            <div class="row g-0">
+                <div class="col-xl-3 col-md-12">
+                    <div class="block-6">
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-12">
+                    <div class="block-7 d-flex justify-content-center align-items-center flex-column ">
+                      <h1 class="my-5 mx-5">Contact with us</h1>
+                      <div class="inpute">
+                        <input type="text" class="input mx-3" placeholder="Your Name">
+                        <input type="text" class="input" placeholder="Your email">
+                  </div>
+                  <textarea name="Your message here" id="textarea" cols="30" rows="10" placeholder="" class="my-5" ></textarea>
+                  <button class="button--block-5">Send message</button>
+                  <div class="fonts my-3 p-3">
+                  <a href="Facebook.com" target="_blank" class="facebook"> <img src="font/Facebook.png"></a>
+                    <a href="Twitter.com" target="_blank" class="twitter"> <img src="font/Twitter.png"></a>
+                    <a href="Dribbble.com" target="_blank" class="dribble"> <img src="font/Dribbble.png"></a>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+      
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  const searchBtn = document.querySelector('button[type="submit"]');
+const searchInput = document.querySelector('input[type="text"]');
+const textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
+
+searchBtn.addEventListener('click', () => {
+  const searchText = searchInput.value.trim().toLowerCase();
+  if (searchText) {
+    textElements.forEach(element => {
+      const text = element.textContent.trim().toLowerCase();
+      if (text.includes(searchText)) {
+        element.style.backgroundColor = 'yellow';
+      } else {
+        element.style.backgroundColor = '';
+      }
+    });
+  } else {
+    textElements.forEach(element => {
+      element.style.backgroundColor = '';
+    });
+  }
+});
+</script>
+</body>
+</html>

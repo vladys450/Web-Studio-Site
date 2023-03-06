@@ -1,0 +1,259 @@
+
+
+.container-fluid {
+    padding: 0px;
+}
+
+.block-1 {
+    background-image: url('img/Boy2.png');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    box-sizing: border-box;
+    
+  }
+
+  .block-2 {
+    height: 80vh;
+    background-color: #f3f3f3;
+padding: 40px;
+font-size: x-large;
+  box-sizing: border-box;
+  }
+  
+  @media (min-width: 250px) and (max-width: 992px) {
+    .block-2 {
+      font-size: medium;
+    }
+  }
+  .block-2 > p {
+    padding: 30px;
+    
+  }
+.block-3 {
+    background-image: url('img/blue.png');
+    height: 110vh;
+    background-size: cover;
+    color: white;
+    font-size: larger;
+}
+
+@media (min-width: 250px) and (max-width: 992px) {
+    .block-3 {
+      font-size: medium;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 5%;
+    }
+  }
+
+.block-3 > p {
+    padding: 27px;
+}
+.block-4 {
+    background-image: url('img/back.png');
+    height: 55vh;
+    background-size: cover;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+
+@media (min-width: 250px) and (max-width: 992px) {
+    .block-4 {
+      font-size: medium;
+    }
+  }
+
+.block-5 {
+    background-image: url('img/sound.png');
+    height: 55vh;
+    background-size: cover;
+    box-sizing: border-box;
+    color: white;
+    font-size: x-large;
+}
+
+@media (min-width: 250px) and (max-width: 992px) {
+    .block-5 {
+      font-size: medium;
+    }
+  }
+
+.block-6 {
+    background-image: url('img/girl.png');
+    height: 80vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.block-7 {
+    background-image: url('img/mount.png');
+    height: 80vh;
+    background-size: cover;
+    box-sizing: border-box;
+    color: white;
+}
+
+.button--block-4 {
+    background: none;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid black;
+    border-radius: 11px;
+}
+.button--block-4:hover {
+  background-color: white;
+}
+@media (min-width: 250px) and (max-width: 992px) {
+  .button--block-4 {
+    padding: 10px 20px 10px 20px;
+}
+}
+
+.button--block-5 {
+    background: none;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid white;
+    border-radius: 11px;
+    color: white;
+}
+.button--block-5:hover {
+  background-color: grey;
+}
+@media (min-width: 250px) and (max-width: 992px) {
+  .button--block-5 {
+    padding: 10px 20px 10px 20px;
+}
+}
+.input {
+    background: none;
+    border: 2px solid white;
+    border-radius: 11px;
+    padding: 15px 100px 15px 100px;
+    color: white;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+@media (min-width: 250px) and (max-width: 992px) {
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7px 50px 7px 50px;
+    margin: 5%
+  }
+}
+
+#textarea {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 11px;
+    padding: 15px 100px 15px 100px;
+    width: 55%
+}
+
+#textarea::placeholder {
+    color: white;
+}
+
+@media (min-width: 250px) and (max-width: 992px) {
+  #textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7px 50px 7px 50px;
+  }
+}
+.facebook, .twitter, .dribble {
+  border: 2px solid white;
+  border-radius: 11px;
+}
+.facebook {
+  padding: 17px;
+}
+.facebook:hover {
+  background-color: grey;
+}
+.twitter {
+  padding: 17px 12px 17px 12px;
+}
+.twitter:hover {
+  background-color: grey;
+}
+.dribble {
+  padding: 17px 11px 17px 11px;
+}
+.dribble:hover {
+  background-color: grey;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  
+}
+@media (min-width:250px) and (max-width: 992px) {
+  .search-container {
+    width: 80%; /* устанавливаем ширину на всю ширину экрана */
+    max-width: 800px; /* устанавливаем максимальную ширину для формы */
+  }
+}
+
+.search-container form {
+  position: absolute;
+  top: 10;
+  left: 20;
+  width: 100%;
+  height: 100%;
+
+}
+
+.search-container input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #fdf0d0;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+@media (max-width: 992px) {
+  .search-container input[type="text"] {
+    padding: 12px;
+    
+  }
+}
+
+.search-container button[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  
+}
+
+.search-container:hover input[type="text"] {
+  width: 70%;
+  background-color: #fdf0d0;
+}
+
+.search-container:hover button[type="submit"] {
+  width: 30%;
+  background-color: #fdf0d0;
+}
+
+
+
+
